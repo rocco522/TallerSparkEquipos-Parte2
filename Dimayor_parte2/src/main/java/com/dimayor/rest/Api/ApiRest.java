@@ -45,7 +45,7 @@ public class ApiRest {
 			Equipo equipo = gson.fromJson(req.body(), Equipo.class);
 			System.out.println("Nombre "+equipo.getNombre());
 			servicio.modificarEquipo(equipo);
-			return gson.toJson("Equipo eliminado con éxito");
+			return gson.toJson("Equipo modificado con éxito");
 		}, gson ::toJson);
 	}
 }
